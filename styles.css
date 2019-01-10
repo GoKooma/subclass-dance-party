@@ -25,3 +25,9 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.johnnyBravo {
+  border: 40px;
+  background-image: url(img/johnny.jpg);
+  position: absolute;
+  
+}
