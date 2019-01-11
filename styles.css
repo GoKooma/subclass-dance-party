@@ -3,7 +3,11 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url('https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj5v57Y6eTfAhU8GDQIHc_YBc4QjRx6BAgBEAU&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwww.workflowmax.com%252Fblog%252Fstaff-christmas-party-planning-10-tips-for-an-unforgettable-night%26psig%3DAOvVaw2YAujOwKDtQ2feOwu9QOoK%26ust%3D1547265031791238&psig=AOvVaw2YAujOwKDtQ2feOwu9QOoK&ust=1547265031791238');
+  background-color: #444;
+  background-image: url(https://big.assets.huffingtonpost.com/slide_297900_2459506_free.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
   font-size: 18px;
 
 }
