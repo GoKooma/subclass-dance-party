@@ -1,21 +1,22 @@
 var DancerJohnnyBravo = function(top, left, timeBetweenSteps) {
-    Dancer.call(this, top, left, timeBetweenSteps);
-    this.$node = $('<span class="johnnyBravo"></span>');
+  Dancer.call(this, top, left, timeBetweenSteps);
+  this.top = top;
+  this.left = left;
+
+  this.$node.addClass("johnnyBravo");
 }
 
-starDancer.prototype = Object.create(Dancer.prototype);
-starDancer.prototype.constructor = starDancer;
+DancerJohnnyBravo.prototype = Object.create(Dancer.prototype);
+DancerJohnnyBravo.prototype.constructor = DancerJohnnyBravo;
 
 DancerJohnnyBravo.prototype.step = function() {
-    Dancer.prototype.step.call(this);
-    // this.$node.click(function() {
-    //     this.$node.animate({
-    //         rotateY: "+=" + (Math.PI) / 2
-    //     }, 500, function() {
-    //         this.$node.toggleClass('flipped');
-    //     }).animate({
-    //         rotateY: "+=" + (Math.PI) / 2
-    //     }, 500);
-    // });
-    this.$node.toggle();
+  Dancer.prototype.step.call(this);
+  this.left += 20;
+  let styleSettings = {
+    top: this.top,
+    left: this.left
+  };
+  this.$node.css(styleSettings);
+  
+  this.$node.toggleClass("flipped");
 }

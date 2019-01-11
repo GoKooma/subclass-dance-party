@@ -27,20 +27,27 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+    console.log(window.dancers);
   });
 
-  // $('.addJohnnyBravo').on('click', function(event) {
-  //   var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+  $('.lineUp').on('click', function(event) {
+    if (window.dancers.length > 0) {
+      for (let i = 0; i < window.dancers.length; i++) {
+        if (window.dancers[i].$node.hasClass("johnnyBravo")) {
+          let styleSettings = {
+            left: 0
+          }
+          window.dancers[i].$node.css(styleSettings);
+        } else if (window.dancers[i].$node.hasClass("apeach") || window.dancers[i].$node.hasClass("ryan")) {
+          let styleSettings = {
+            top: 0
+          }
+          window.dancers[i].$node.css(styleSettings);
+        }
+      }
+    }
+  });
 
-  //   var dancerMakerFunction = window[dancerMakerFunctionName];
-
-  //   var dancer = new dancerMakerFunction(
-  //     $("body").height() * Math.random(),
-  //     $("body").width() * Math.random(),
-  //     Math.random() * 1000
-  //   );
-  //   $('body').append(dancer.$node);
-  // });
-  // // })
 });
 

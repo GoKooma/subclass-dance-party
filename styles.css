@@ -3,8 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj5v57Y6eTfAhU8GDQIHc_YBc4QjRx6BAgBEAU&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwww.workflowmax.com%252Fblog%252Fstaff-christmas-party-planning-10-tips-for-an-unforgettable-night%26psig%3DAOvVaw2YAujOwKDtQ2feOwu9QOoK%26ust%3D1547265031791238&psig=AOvVaw2YAujOwKDtQ2feOwu9QOoK&ust=1547265031791238');
   font-size: 18px;
+
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -12,6 +13,10 @@ body, a:link, a:visited, a:active{
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
+}
+.lineUp {
+  padding: 5px 12px;
+  float:left;
 }
 .topbar{
   height:32px;
@@ -25,9 +30,46 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.greenDancer{
+  border: 10px solid green;
+  border-radius:10px;
+  position:absolute;
+}
 .johnnyBravo {
-  border: 40px;
-  background-image: url(img/johnny.jpg);
-  position: absolute;
+  border: 0px;
+  content: url(/Users/kooma/Desktop/HackReactor/hrla27-subclass-dance-party/img/johnny.jpg);
+  width: 100px;
+  height: 100px;
   
+}
+.flipped {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.apeach {
+  border: 0px;
+  content: url(/Users/kooma/Desktop/HackReactor/hrla27-subclass-dance-party/img/apeach.png);
+  width: 100px;
+  height: 100px;
+}
+
+.ryan {
+  border: 0px;
+  content: url(/Users/kooma/Desktop/HackReactor/hrla27-subclass-dance-party/img/ryan.png);
+  width: 100px;
+  height: 100px;
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
 }
